@@ -1,80 +1,140 @@
 # 🚚 Sistema de Frete
 
-## 📖 Sobre o Projeto
-
-Este projeto foi desenvolvido como **atividade de aula** (23/09/2025) para modelar um sistema de cálculo de custo de frete para uma empresa de logística.
-O objetivo é calcular o custo total de uma entrega, que é composto pelo **custo do veículo** + **custo do entregador**, variando de acordo com o tipo escolhido.
-
-O sistema foi implementado em **Java** no **Eclipse IDE**.
+Projeto acadêmico desenvolvido em Java com foco em Programação Orientada a Objetos (POO).  
+Aluno: Jhonatan Thiago  
 
 ---
 
-## 🛠️ Funcionalidades
+## 📌 Sobre o Projeto
 
-* Interface `Fretavel` que define o método de cálculo de frete.
-* Classe abstrata `Veiculo` e subclasses:
+Este projeto consiste em um sistema de cálculo de frete para uma empresa de logística.
 
-  * 🚗 **Carro** → custo = distância × 1.25
-  * 🏍️ **Motocicleta** → custo = distância × 0.45
-* Classe abstrata `Entregador` e subclasses:
+A aplicação simula o cálculo do custo total de uma entrega, considerando diferentes tipos de veículos e entregadores, aplicando conceitos de orientação a objetos como herança, abstração e polimorfismo.
 
-  * 👨‍💼 **Funcionário** → custo fixo de R$ 5,00 por entrega
-  * 👷 **Autônomo** → custo = distância × 0.95
-* Classe `ServicoDeEntrega` que gerencia os itens e calcula o custo total da entrega.
-* Classe `Main` para simulação das entregas.
+O sistema foi desenvolvido com foco em organização, reutilização de código e boas práticas de modelagem.
 
 ---
 
-## 📂 Estrutura do Projeto
+## 🚀 Funcionalidades
+
+- Cálculo do custo de frete com base na distância  
+- Suporte a diferentes tipos de veículos  
+- Suporte a diferentes tipos de entregadores  
+- Cálculo automático do custo total da entrega  
+- Simulação de cenários de entrega  
+
+---
+
+## 🧱 Estrutura do Projeto
 
 ```
+
 SistemaFrete/
- └── src/
-      └── frete/
-          ├── Fretavel.java
-          ├── Veiculo.java
-          ├── Carro.java
-          ├── Motocicleta.java
-          ├── Entregador.java
-          ├── Funcionario.java
-          ├── Autonomo.java
-          ├── ServicoDeEntrega.java
-          └── Main.java
+└── src/
+└── frete/
+├── Fretavel.java
+├── Veiculo.java
+├── Carro.java
+├── Motocicleta.java
+├── Entregador.java
+├── Funcionario.java
+├── Autonomo.java
+├── ServicoDeEntrega.java
+└── Main.java
+
 ```
 
 ---
 
-## ▶️ Como Executar no Eclipse
+## 🛠 Tecnologias Utilizadas
 
-1. Abra o **Eclipse**.
-2. Vá em **File > New > Java Project** → nomeie como `SistemaFrete`.
-3. Clique com o botão direito em `src` → **New > Package** → nome: `frete`.
-4. Crie as classes e interfaces acima dentro do pacote `frete`.
-5. No arquivo `Main.java`, clique em **Run > Run As > Java Application**.
-6. O console exibirá o resultado das simulações.
+- Java  
+- Programação Orientada a Objetos (POO)  
 
 ---
 
-## 📊 Exemplos de Saída
+## 🧠 Conceitos Aplicados
+
+- Interfaces (Fretavel)  
+- Classes abstratas  
+- Herança  
+- Polimorfismo  
+- Encapsulamento  
+- Organização e modelagem de sistemas  
+
+---
+
+## ⚙️ Regras de Cálculo
+
+### 🚗 Veículos
+- Carro → custo = distância × 1.25  
+- Motocicleta → custo = distância × 0.45  
+
+### 👨‍💼 Entregadores
+- Funcionário → custo fixo de R$ 5,00  
+- Autônomo → custo = distância × 0.95  
+
+---
+
+## ▶️ Como Executar
+
+### 🔧 Requisitos
+
+- Java JDK 24 ou superior  
+- IDE (Eclipse, IntelliJ ou VS Code)
+
+### ▶️ Execução
+
+1. Importe o projeto na sua IDE  
+2. Compile as classes  
+3. Execute a classe principal:
+
+```
+
+Main.java
+
+```
+
+---
+
+## 📊 Exemplos de Execução
 
 ### Simulação 1
-
-Entrega de **10 km** feita por um **Funcionário com Carro**:
+Entrega de 10 km feita por Funcionário com Carro:
 
 ```
+
 Entrega 1 (10km - Funcionario + Carro): R$ 17.5
+
 ```
 
 ### Simulação 2
-
-Entrega de **25 km** feita por um **Autônomo com Motocicleta**:
+Entrega de 25 km feita por Autônomo com Motocicleta:
 
 ```
+
 Entrega 2 (25km - Autonomo + Motocicleta): R$ 35.0
+
 ```
 
 ---
 
-## 🧑‍💻 Autor
+## 📈 Possíveis Melhorias
 
-Projeto desenvolvido por **Jhonatan Thiago** como parte das atividades de aula de **Programação Orientada a Objetos**.
+- Interface gráfica (GUI)  
+- Integração com banco de dados  
+- Transformação em API REST  
+- Validação de dados de entrada  
+
+---
+
+## 📄 Observação
+
+Projeto acadêmico desenvolvido com foco na prática de conceitos avançados de Programação Orientada a Objetos e modelagem de sistemas.
+
+---
+
+## 👨‍💻 Autor
+
+Jhonatan Thiago  
+https://github.com/jhonatanthiago
